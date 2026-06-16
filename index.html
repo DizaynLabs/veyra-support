@@ -3,26 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Veyra — Destek & Tanıtım</title>
-<meta name="description" content="Veyra — kendi M3U çalma listelerinizi şık ve hızlı bir oynatıcıyla izleyin. Destek, SSS ve yasal bilgiler.">
+<title>Veyra Media — Destek & Tanıtım</title>
+<meta name="description" content="Veyra Media — kendi M3U çalma listelerinizi şık ve hızlı bir oynatıcıyla izleyin. Destek, SSS ve yasal bilgiler.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#070b16;
-    --bg2:#0b1222;
-    --panel:#101a30;
-    --panel-2:#142038;
-    --line:rgba(255,255,255,.08);
-    --gold:#e6b94d;
-    --gold-soft:#f2d585;
-    --blue:#4f9cff;
-    --text:#eef3fb;
-    --muted:#9fb0cb;
-    --muted-2:#6f819e;
-    --radius:18px;
-    --maxw:1080px;
+    --bg:#070b16;--bg2:#0b1222;--panel:#101a30;--panel-2:#142038;
+    --line:rgba(255,255,255,.08);--gold:#e6b94d;--gold-soft:#f2d585;--blue:#4f9cff;
+    --text:#eef3fb;--muted:#9fb0cb;--muted-2:#6f819e;--radius:18px;--maxw:1080px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -32,99 +22,52 @@
       radial-gradient(900px 500px at 85% -10%, rgba(79,156,255,.14), transparent 60%),
       radial-gradient(700px 460px at 10% 0%, rgba(230,185,77,.10), transparent 55%),
       var(--bg);
-    color:var(--text);
-    line-height:1.65;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
+    color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;
   }
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
   h1,h2,h3{font-family:'Sora',sans-serif;line-height:1.15;letter-spacing:-.02em}
-
-  /* NAV */
-  header.nav{
-    position:sticky;top:0;z-index:50;
-    backdrop-filter:blur(14px);
-    background:rgba(7,11,22,.72);
-    border-bottom:1px solid var(--line);
-  }
+  header.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(7,11,22,.72);border-bottom:1px solid var(--line)}
   .nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
   .brand{display:flex;align-items:center;gap:12px;font-family:'Sora';font-weight:800;font-size:1.15rem}
-  .logo{
-    width:38px;height:38px;border-radius:11px;
-    background:radial-gradient(circle at 32% 28%, #1a2740, #0a1120);
-    border:1px solid rgba(230,185,77,.4);
-    display:grid;place-items:center;flex:none;
-    box-shadow:0 6px 20px rgba(0,0,0,.4);
-  }
+  .logo{width:38px;height:38px;border-radius:11px;background:radial-gradient(circle at 32% 28%, #1a2740, #0a1120);border:1px solid rgba(230,185,77,.4);display:grid;place-items:center;flex:none;box-shadow:0 6px 20px rgba(0,0,0,.4)}
   .logo svg{width:18px;height:18px;fill:var(--gold)}
+  .nav-right{display:flex;align-items:center;gap:24px}
   .nav-links{display:flex;gap:28px}
   .nav-links a{color:var(--muted);text-decoration:none;font-weight:600;font-size:.95rem;transition:color .2s}
   .nav-links a:hover{color:var(--text)}
+  .lang-switch{display:flex;gap:4px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:4px}
+  .lang-switch button{background:none;border:none;color:var(--muted);font-family:'Manrope';font-weight:700;font-size:.82rem;padding:5px 11px;border-radius:7px;cursor:pointer;transition:all .2s}
+  .lang-switch button.active{background:rgba(230,185,77,.16);color:var(--gold-soft)}
   @media(max-width:680px){.nav-links{display:none}}
-
-  /* HERO */
   .hero{padding:96px 0 72px;text-align:center;position:relative}
-  .pill{
-    display:inline-flex;align-items:center;gap:8px;
-    padding:7px 16px;border-radius:999px;
-    border:1px solid rgba(230,185,77,.3);
-    background:rgba(230,185,77,.07);
-    color:var(--gold-soft);font-weight:600;font-size:.82rem;
-    margin-bottom:26px;letter-spacing:.02em;
-  }
+  .pill{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:999px;border:1px solid rgba(230,185,77,.3);background:rgba(230,185,77,.07);color:var(--gold-soft);font-weight:600;font-size:.82rem;margin-bottom:26px;letter-spacing:.02em}
   .pill span{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}
   .hero h1{font-size:clamp(2.3rem,6vw,4rem);font-weight:800;margin-bottom:20px}
-  .hero h1 .grad{
-    background:linear-gradient(120deg,var(--gold) 10%,var(--gold-soft) 50%,#fff 90%);
-    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
-  }
+  .hero h1 .grad{background:linear-gradient(120deg,var(--gold) 10%,var(--gold-soft) 50%,#fff 90%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
   .hero p.lead{font-size:clamp(1.05rem,2.4vw,1.3rem);color:var(--muted);max-width:640px;margin:0 auto 36px}
   .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-  .btn{
-    display:inline-flex;align-items:center;gap:9px;
-    padding:14px 26px;border-radius:13px;font-weight:700;font-size:1rem;
-    text-decoration:none;transition:transform .15s, box-shadow .2s;cursor:pointer;border:none;
-  }
-  .btn-primary{
-    background:linear-gradient(135deg,var(--gold),var(--gold-soft));
-    color:#1a1304;box-shadow:0 10px 30px rgba(230,185,77,.28);
-  }
+  .btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:13px;font-weight:700;font-size:1rem;text-decoration:none;transition:transform .15s, box-shadow .2s;cursor:pointer;border:none}
+  .btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold-soft));color:#1a1304;box-shadow:0 10px 30px rgba(230,185,77,.28)}
   .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 38px rgba(230,185,77,.4)}
   .btn-ghost{background:var(--panel);color:var(--text);border:1px solid var(--line)}
   .btn-ghost:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.2)}
-
-  /* SECTION */
   section{padding:64px 0}
   .sec-head{text-align:center;margin-bottom:48px}
   .sec-head .kicker{color:var(--gold);font-weight:700;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:12px}
   .sec-head h2{font-size:clamp(1.7rem,4vw,2.5rem);font-weight:700}
   .sec-head p{color:var(--muted);max-width:560px;margin:14px auto 0}
-
-  /* FEATURE GRID */
   .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
   @media(max-width:860px){.grid{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:560px){.grid{grid-template-columns:1fr}}
-  .card{
-    background:linear-gradient(180deg,var(--panel),rgba(16,26,48,.5));
-    border:1px solid var(--line);border-radius:var(--radius);
-    padding:28px 24px;transition:transform .2s, border-color .2s;
-  }
+  .card{background:linear-gradient(180deg,var(--panel),rgba(16,26,48,.5));border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;transition:transform .2s, border-color .2s}
   .card:hover{transform:translateY(-4px);border-color:rgba(230,185,77,.25)}
-  .card .ic{
-    width:46px;height:46px;border-radius:12px;display:grid;place-items:center;
-    background:rgba(230,185,77,.12);margin-bottom:16px;
-  }
+  .card .ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:rgba(230,185,77,.12);margin-bottom:16px}
   .card .ic svg{width:23px;height:23px;stroke:var(--gold);fill:none;stroke-width:1.8}
   .card h3{font-size:1.12rem;margin-bottom:8px}
   .card p{color:var(--muted);font-size:.95rem}
-
-  /* PRICING */
   .price-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:760px;margin:0 auto}
   @media(max-width:620px){.price-grid{grid-template-columns:1fr}}
-  .price{
-    background:linear-gradient(180deg,var(--panel),rgba(16,26,48,.4));
-    border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;position:relative;
-  }
+  .price{background:linear-gradient(180deg,var(--panel),rgba(16,26,48,.4));border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;position:relative}
   .price.feat{border-color:rgba(230,185,77,.45);box-shadow:0 0 40px rgba(230,185,77,.1)}
   .price .tag{position:absolute;top:18px;right:18px;font-size:.72rem;font-weight:700;padding:5px 11px;border-radius:999px;background:rgba(230,185,77,.16);color:var(--gold-soft)}
   .price h3{font-size:1.3rem;margin-bottom:6px}
@@ -134,28 +77,14 @@
   .price li{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:.95rem}
   .price li svg{width:18px;height:18px;flex:none;margin-top:3px;stroke:var(--gold);fill:none;stroke-width:2}
   .note-once{text-align:center;color:var(--muted-2);font-size:.88rem;margin-top:24px}
-
-  /* IMPORTANT BOX */
-  .notice{
-    background:linear-gradient(135deg,rgba(79,156,255,.08),rgba(230,185,77,.05));
-    border:1px solid rgba(79,156,255,.2);border-radius:var(--radius);
-    padding:30px 28px;max-width:780px;margin:0 auto;
-  }
+  .notice{background:linear-gradient(135deg,rgba(79,156,255,.08),rgba(230,185,77,.05));border:1px solid rgba(79,156,255,.2);border-radius:var(--radius);padding:30px 28px;max-width:780px;margin:0 auto}
   .notice h3{display:flex;align-items:center;gap:10px;font-size:1.15rem;margin-bottom:10px}
   .notice h3 svg{width:22px;height:22px;stroke:var(--blue);fill:none;stroke-width:1.8}
   .notice p{color:var(--muted);font-size:.97rem}
-
-  /* FAQ */
   .faq-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
-  details{
-    background:var(--panel);border:1px solid var(--line);border-radius:14px;
-    padding:0 22px;overflow:hidden;transition:border-color .2s;
-  }
+  details{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:0 22px;overflow:hidden;transition:border-color .2s}
   details[open]{border-color:rgba(230,185,77,.25)}
-  summary{
-    cursor:pointer;padding:20px 0;font-weight:600;font-size:1.02rem;
-    list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;
-  }
+  summary{cursor:pointer;padding:20px 0;font-weight:600;font-size:1.02rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
   summary::-webkit-details-marker{display:none}
   summary .plus{flex:none;width:22px;height:22px;position:relative;transition:transform .25s}
   summary .plus::before,summary .plus::after{content:'';position:absolute;background:var(--gold);border-radius:2px}
@@ -163,173 +92,177 @@
   summary .plus::after{left:10px;top:3px;bottom:3px;width:2px;transition:opacity .25s}
   details[open] summary .plus::after{opacity:0}
   details .ans{color:var(--muted);font-size:.96rem;padding:0 0 22px}
-
-  /* CONTACT */
-  .contact-box{
-    text-align:center;background:linear-gradient(180deg,var(--panel),rgba(16,26,48,.3));
-    border:1px solid var(--line);border-radius:var(--radius);padding:48px 28px;max-width:680px;margin:0 auto;
-  }
+  .contact-box{text-align:center;background:linear-gradient(180deg,var(--panel),rgba(16,26,48,.3));border:1px solid var(--line);border-radius:var(--radius);padding:48px 28px;max-width:680px;margin:0 auto}
   .contact-box h2{font-size:1.8rem;margin-bottom:12px}
   .contact-box p{color:var(--muted);margin-bottom:24px}
-  .mail{
-    display:inline-flex;align-items:center;gap:10px;font-family:'Sora';font-weight:700;
-    font-size:1.15rem;color:var(--gold-soft);text-decoration:none;
-    padding:14px 28px;border:1px solid rgba(230,185,77,.3);border-radius:13px;
-    background:rgba(230,185,77,.06);transition:all .2s;
-  }
+  .mail{display:inline-flex;align-items:center;gap:10px;font-family:'Sora';font-weight:700;font-size:1.15rem;color:var(--gold-soft);text-decoration:none;padding:14px 28px;border:1px solid rgba(230,185,77,.3);border-radius:13px;background:rgba(230,185,77,.06);transition:all .2s}
   .mail:hover{background:rgba(230,185,77,.12);transform:translateY(-2px)}
   .mail svg{width:20px;height:20px;stroke:var(--gold);fill:none;stroke-width:1.8}
-
-  /* FOOTER */
   footer{border-top:1px solid var(--line);padding:40px 0 56px;margin-top:40px}
   .foot-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
   .foot-links{display:flex;gap:24px;flex-wrap:wrap}
   .foot-links a{color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s}
   .foot-links a:hover{color:var(--gold-soft)}
   .copy{color:var(--muted-2);font-size:.85rem}
-
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease}
   .reveal.in{opacity:1;transform:none}
+  [data-en]{display:none}
+  body.en [data-tr]{display:none}
+  body.en [data-en]{display:revert}
 </style>
 </head>
 <body>
-
 <header class="nav">
   <div class="wrap nav-inner">
     <div class="brand">
-      <span class="logo">
-        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-      </span>
-      Veyra
+      <span class="logo"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+      Veyra Media
     </div>
-    <nav class="nav-links">
-      <a href="#features">Özellikler</a>
-      <a href="#pricing">Premium</a>
-      <a href="#faq">SSS</a>
-      <a href="#contact">Destek</a>
-    </nav>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="#features"><span data-tr>Özellikler</span><span data-en>Features</span></a>
+        <a href="#pricing">Premium</a>
+        <a href="#faq"><span data-tr>SSS</span><span data-en>FAQ</span></a>
+        <a href="#contact"><span data-tr>Destek</span><span data-en>Support</span></a>
+      </nav>
+      <div class="lang-switch">
+        <button id="btn-tr" class="active" onclick="setLang('tr')">TR</button>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
   </div>
 </header>
-
 <section class="hero">
   <div class="wrap">
     <div class="pill"><span></span> Media Player</div>
-    <h1>Kendi listenizi,<br><span class="grad">şık bir oynatıcıyla</span> izleyin</h1>
-    <p class="lead">Veyra, kendi M3U çalma listelerinizi ekleyerek canlı yayın, film ve dizi içeriklerinizi tek bir yerden yönetmenizi sağlayan modern bir medya oynatıcısıdır.</p>
+    <h1 data-tr>Kendi listenizi,<br><span class="grad">şık bir oynatıcıyla</span> izleyin</h1>
+    <h1 data-en>Watch your own playlist<br><span class="grad">with a sleek player</span></h1>
+    <p class="lead" data-tr>Veyra Media, kendi M3U çalma listelerinizi ekleyerek canlı yayın, film ve dizi içeriklerinizi tek bir yerden yönetmenizi sağlayan modern bir medya oynatıcısıdır.</p>
+    <p class="lead" data-en>Veyra Media is a modern media player that lets you manage your live streams, movies and series in one place by adding your own M3U playlists.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="https://apps.apple.com/app/id6762657480">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="#1a1304"><path d="M17.05 12.04c-.03-2.6 2.12-3.85 2.22-3.91-1.21-1.77-3.09-2.01-3.76-2.04-1.6-.16-3.12.94-3.93.94-.81 0-2.06-.92-3.39-.89-1.74.03-3.35 1.01-4.25 2.57-1.81 3.14-.46 7.79 1.3 10.34.86 1.25 1.88 2.65 3.21 2.6 1.29-.05 1.78-.83 3.34-.83 1.55 0 2 .83 3.37.81 1.39-.03 2.27-1.27 3.12-2.53.98-1.45 1.39-2.85 1.41-2.92-.03-.01-2.71-1.04-2.74-4.13M14.54 4.6c.71-.86 1.19-2.06 1.06-3.25-1.02.04-2.26.68-2.99 1.54-.66.76-1.23 1.98-1.08 3.15 1.14.09 2.3-.58 3.01-1.44"/></svg>
-        App Store'da İndir
+        <span data-tr>App Store'da İndir</span><span data-en>Download on the App Store</span>
       </a>
-      <a class="btn btn-ghost" href="#contact">Destek Al</a>
+      <a class="btn btn-ghost" href="#contact"><span data-tr>Destek Al</span><span data-en>Get Support</span></a>
     </div>
   </div>
 </section>
-
 <section id="features">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="kicker">Özellikler</span>
-      <h2>İhtiyacınız olan her şey</h2>
-      <p>Temiz arayüz, güçlü oynatıcı ve kişiselleştirme. Veyra içerik sağlamaz; yalnızca sizin eklediğiniz bağlantıları oynatır.</p>
+      <span class="kicker"><span data-tr>Özellikler</span><span data-en>Features</span></span>
+      <h2 data-tr>İhtiyacınız olan her şey</h2>
+      <h2 data-en>Everything you need</h2>
+      <p data-tr>Temiz arayüz, güçlü oynatıcı ve kişiselleştirme. Veyra Media içerik sağlamaz; yalnızca sizin eklediğiniz bağlantıları oynatır.</p>
+      <p data-en>Clean interface, powerful player and personalization. Veyra Media provides no content; it only plays the links you add.</p>
     </div>
     <div class="grid">
       <div class="card reveal">
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div>
-        <h3>M3U / M3U8 Desteği</h3>
-        <p>Kendi çalma listesi bağlantılarınızı kolayca ekleyin ve anında izlemeye başlayın.</p>
+        <h3 data-tr>M3U / M3U8 Desteği</h3><h3 data-en>M3U / M3U8 Support</h3>
+        <p data-tr>Kendi çalma listesi bağlantılarınızı kolayca ekleyin ve anında izlemeye başlayın.</p>
+        <p data-en>Easily add your own playlist links and start watching instantly.</p>
       </div>
       <div class="card reveal">
         <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></div>
-        <h3>Canlı Yayın, Film & Dizi</h3>
-        <p>İçeriklerinizi kategorilere ayrılmış, düzenli bir arayüzde yönetin.</p>
+        <h3 data-tr>Canlı Yayın, Film & Dizi</h3><h3 data-en>Live Streams, Movies & Series</h3>
+        <p data-tr>İçeriklerinizi kategorilere ayrılmış, düzenli bir arayüzde yönetin.</p>
+        <p data-en>Manage your content in a tidy, category-organized interface.</p>
       </div>
       <div class="card reveal">
         <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-        <h3>Gelişmiş Oynatıcı</h3>
-        <p>Kalite seçimi, ileri/geri atlama, oynatma hızı kontrolü ve daha fazlası.</p>
+        <h3 data-tr>Gelişmiş Oynatıcı</h3><h3 data-en>Advanced Player</h3>
+        <p data-tr>Kalite seçimi, ileri/geri atlama, oynatma hızı kontrolü ve daha fazlası.</p>
+        <p data-en>Quality selection, skip forward/back, playback speed control and more.</p>
       </div>
       <div class="card reveal">
         <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg></div>
-        <h3>EPG Program Rehberi</h3>
-        <p>Elektronik program rehberi desteğiyle yayın akışını takip edin.</p>
+        <h3 data-tr>EPG Program Rehberi</h3><h3 data-en>EPG Program Guide</h3>
+        <p data-tr>Elektronik program rehberi desteğiyle yayın akışını takip edin.</p>
+        <p data-en>Follow the broadcast schedule with electronic program guide support.</p>
       </div>
       <div class="card reveal">
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 17.3l-6.2 3.7 1.6-7L2 9.2l7.1-.6L12 2l2.9 6.6 7.1.6-5.4 4.8 1.6 7z"/></svg></div>
-        <h3>Favoriler & Geçmiş</h3>
-        <p>Sık izlediklerinizi kaydedin, izleme geçmişinize hızlıca dönün.</p>
+        <h3 data-tr>Favoriler & Geçmiş</h3><h3 data-en>Favorites & History</h3>
+        <p data-tr>Sık izlediklerinizi kaydedin, izleme geçmişinize hızlıca dönün.</p>
+        <p data-en>Save your favorites and quickly return to your watch history.</p>
       </div>
       <div class="card reveal">
         <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg></div>
-        <h3>Türkçe & İngilizce</h3>
-        <p>Çoklu dil ve tema desteğiyle tamamen size özel bir deneyim.</p>
+        <h3 data-tr>Türkçe & İngilizce</h3><h3 data-en>Turkish & English</h3>
+        <p data-tr>Çoklu dil ve tema desteğiyle tamamen size özel bir deneyim.</p>
+        <p data-en>A fully personalized experience with multi-language and theme support.</p>
       </div>
     </div>
   </div>
 </section>
-
 <section id="pricing">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="kicker">Premium</span>
-      <h2>Tek seferlik, abonelik yok</h2>
-      <p>İstediğiniz planı seçin. Otomatik yenileme yoktur — bir kez öde, kullan.</p>
+      <h2 data-tr>Tek seferlik, abonelik yok</h2>
+      <h2 data-en>One-time purchase, no subscription</h2>
+      <p data-tr>İstediğiniz planı seçin. Otomatik yenileme yoktur — bir kez öde, kullan.</p>
+      <p data-en>Choose the plan you want. No auto-renewal — pay once, use it.</p>
     </div>
     <div class="price-grid">
       <div class="price reveal">
-        <h3>Reklamsız</h3>
-        <div class="amt">₺99,99 <small>tek seferlik</small></div>
+        <h3 data-tr>Reklamsız</h3><h3 data-en>Ad-Free</h3>
+        <div class="amt">₺99,99 <small data-tr>tek seferlik</small><small data-en>one-time</small></div>
         <ul>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Tüm reklamlar kaldırılır</li>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Tüm ücretsiz özellikler</li>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Kesintisiz izleme</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> <span data-tr>Tüm reklamlar kaldırılır</span><span data-en>All ads removed</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> <span data-tr>Tüm ücretsiz özellikler</span><span data-en>All free features</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> <span data-tr>Kesintisiz izleme</span><span data-en>Uninterrupted viewing</span></li>
         </ul>
       </div>
       <div class="price feat reveal">
-        <span class="tag">EN İYİ</span>
+        <span class="tag" data-tr>EN İYİ</span><span class="tag" data-en>BEST</span>
         <h3>Premium</h3>
-        <div class="amt">₺249,99 <small>tek seferlik</small></div>
+        <div class="amt">₺249,99 <small data-tr>tek seferlik</small><small data-en>one-time</small></div>
         <ul>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Reklamsız'daki her şey</li>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> 15 premium özellik</li>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Ömür boyu erişim</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> <span data-tr>Reklamsız'daki her şey</span><span data-en>Everything in Ad-Free</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> <span data-tr>15 premium özellik</span><span data-en>15 premium features</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> <span data-tr>Ömür boyu erişim</span><span data-en>Lifetime access</span></li>
         </ul>
       </div>
     </div>
-    <p class="note-once">Satın almalar tek seferliktir, abonelik değildir. Aynı Apple Kimliği ile tüm cihazlarınızda geri yükleyebilirsiniz.</p>
+    <p class="note-once" data-tr>Satın almalar tek seferliktir, abonelik değildir. Aynı Apple Kimliği ile tüm cihazlarınızda geri yükleyebilirsiniz.</p>
+    <p class="note-once" data-en>Purchases are one-time, not subscriptions. You can restore them on all your devices with the same Apple ID.</p>
   </div>
 </section>
-
 <section>
   <div class="wrap">
     <div class="notice reveal">
-      <h3><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg> Önemli Bilgilendirme</h3>
-      <p>Veyra bir medya oynatıcısıdır. İçerik, kanal listesi veya yayın <strong>sağlamaz</strong>. Eklediğiniz içeriklerin yasal kullanım hakkına sahip olmaktan yalnızca siz sorumlusunuz. Tıpkı VLC veya bir web tarayıcısı gibi, yalnızca sizin yönlendirdiğiniz içeriği oynatır.</p>
+      <h3><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg> <span data-tr>Önemli Bilgilendirme</span><span data-en>Important Notice</span></h3>
+      <p data-tr>Veyra Media bir medya oynatıcısıdır. İçerik, kanal listesi veya yayın <strong>sağlamaz</strong>. Eklediğiniz içeriklerin yasal kullanım hakkına sahip olmaktan yalnızca siz sorumlusunuz. Tıpkı VLC veya bir web tarayıcısı gibi, yalnızca sizin yönlendirdiğiniz içeriği oynatır.</p>
+      <p data-en>Veyra Media is a media player. It does <strong>not</strong> provide any content, channel lists, or streams. You alone are responsible for having the legal rights to the content you add. Just like VLC or a web browser, it only plays the content you point it to.</p>
     </div>
   </div>
 </section>
-
 <section id="faq">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="kicker">SSS</span>
-      <h2>Sıkça Sorulan Sorular</h2>
+      <span class="kicker">SSS / FAQ</span>
+      <h2 data-tr>Sıkça Sorulan Sorular</h2>
+      <h2 data-en>Frequently Asked Questions</h2>
     </div>
     <div class="faq-list">
-      <details class="reveal"><summary>Uygulama kanal veya içerik sağlıyor mu?<span class="plus"></span></summary><div class="ans">Hayır. Veyra yalnızca bir oynatıcıdır. Hiçbir kanal, yayın veya çalma listesi içermez. İzlemek için kendi M3U/M3U8 bağlantınızı eklemeniz gerekir.</div></details>
-      <details class="reveal"><summary>Çalma listemi nasıl eklerim?<span class="plus"></span></summary><div class="ans">Uygulamayı açın, Ayarlar → "Playlist Ekle" bölümüne gidin ve sahip olduğunuz M3U bağlantısını yapıştırın. İçerikleriniz otomatik olarak yüklenir.</div></details>
-      <details class="reveal"><summary>Premium bir abonelik mi?<span class="plus"></span></summary><div class="ans">Hayır. Hem "Reklamsız" hem "Premium" tek seferlik satın alımlardır. Otomatik yenileme veya tekrar eden ödeme yoktur.</div></details>
-      <details class="reveal"><summary>Satın aldığım Premium'u nasıl geri yüklerim?<span class="plus"></span></summary><div class="ans">Premium ekranındaki "Satın Alımları Geri Yükle" butonuna dokunun. Aynı Apple Kimliği ile yaptığınız satın alımlar geri yüklenir.</div></details>
-      <details class="reveal"><summary>İçerikler oynatılmıyor, ne yapmalıyım?<span class="plus"></span></summary><div class="ans">Genellikle sorun çalma listesi bağlantınızın kaynağındadır (ölü bağlantı, sunucu sorunu vb.). Bağlantınızın geçerli ve aktif olduğundan emin olun. Sorun devam ederse bize ulaşın.</div></details>
+      <details class="reveal"><summary><span data-tr>Uygulama kanal veya içerik sağlıyor mu?</span><span data-en>Does the app provide any channels or content?</span><span class="plus"></span></summary><div class="ans"><span data-tr>Hayır. Veyra Media yalnızca bir oynatıcıdır. Hiçbir kanal, yayın veya çalma listesi içermez. İzlemek için kendi M3U/M3U8 bağlantınızı eklemeniz gerekir.</span><span data-en>No. Veyra Media is only a player. It contains no channels, streams, or playlists. You must add your own M3U/M3U8 link to watch.</span></div></details>
+      <details class="reveal"><summary><span data-tr>Çalma listemi nasıl eklerim?</span><span data-en>How do I add my playlist?</span><span class="plus"></span></summary><div class="ans"><span data-tr>Uygulamayı açın, Ayarlar → "Playlist Ekle" bölümüne gidin ve sahip olduğunuz M3U bağlantısını yapıştırın. İçerikleriniz otomatik olarak yüklenir.</span><span data-en>Open the app, go to Settings → "Add Playlist" and paste your own M3U link. Your content will load automatically.</span></div></details>
+      <details class="reveal"><summary><span data-tr>Premium bir abonelik mi?</span><span data-en>Is Premium a subscription?</span><span class="plus"></span></summary><div class="ans"><span data-tr>Hayır. Hem "Reklamsız" hem "Premium" tek seferlik satın alımlardır. Otomatik yenileme veya tekrar eden ödeme yoktur.</span><span data-en>No. Both "Ad-Free" and "Premium" are one-time purchases. There is no auto-renewal or recurring payment.</span></div></details>
+      <details class="reveal"><summary><span data-tr>Satın aldığım Premium'u nasıl geri yüklerim?</span><span data-en>How do I restore my purchase?</span><span class="plus"></span></summary><div class="ans"><span data-tr>Premium ekranındaki "Satın Alımları Geri Yükle" butonuna dokunun. Aynı Apple Kimliği ile yaptığınız satın alımlar geri yüklenir.</span><span data-en>Tap the "Restore Purchases" button on the Premium screen. Purchases made with the same Apple ID will be restored.</span></div></details>
+      <details class="reveal"><summary><span data-tr>İçerikler oynatılmıyor, ne yapmalıyım?</span><span data-en>Content won't play, what should I do?</span><span class="plus"></span></summary><div class="ans"><span data-tr>Genellikle sorun çalma listesi bağlantınızın kaynağındadır (ölü bağlantı, sunucu sorunu vb.). Bağlantınızın geçerli ve aktif olduğundan emin olun. Sorun devam ederse bize ulaşın.</span><span data-en>Usually the issue is with the source of your playlist link (dead link, server issue, etc.). Make sure your link is valid and active. If the problem persists, contact us.</span></div></details>
     </div>
   </div>
 </section>
-
 <section id="contact">
   <div class="wrap">
     <div class="contact-box reveal">
-      <h2>Yardıma mı ihtiyacınız var?</h2>
-      <p>Sorularınız, geri bildirimleriniz veya teknik destek için bize e-posta gönderin. En kısa sürede dönüş yapıyoruz.</p>
+      <h2 data-tr>Yardıma mı ihtiyacınız var?</h2>
+      <h2 data-en>Need help?</h2>
+      <p data-tr>Sorularınız, geri bildirimleriniz veya teknik destek için bize e-posta gönderin. En kısa sürede dönüş yapıyoruz.</p>
+      <p data-en>Email us for questions, feedback, or technical support. We'll get back to you as soon as possible.</p>
       <a class="mail" href="mailto:solmaz.destek@gmail.com">
         <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
         solmaz.destek@gmail.com
@@ -337,23 +270,27 @@
     </div>
   </div>
 </section>
-
 <footer>
   <div class="wrap foot-inner">
     <div class="brand">
       <span class="logo"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
-      Veyra
+      Veyra Media
     </div>
     <div class="foot-links">
-      <a href="https://gist.githubusercontent.com/muratsezge-alt/57a60ac7bba4a7494eb8a30b36fe1b55/raw/083769c02d059888ab2db12d92b457cb4a80096b/privacy_policy.txt">Gizlilik Politikası</a>
-      <a href="https://gist.githubusercontent.com/muratsezge-alt/88930038edd16ac57fd16eb6643126c4/raw/b0a9246acb3329d18c4afd1e136d82c016bf0df9/terms_of_service.txt">Kullanım Koşulları</a>
-      <a href="mailto:solmaz.destek@gmail.com">İletişim</a>
+      <a href="https://gist.githubusercontent.com/muratsezge-alt/57a60ac7bba4a7494eb8a30b36fe1b55/raw/083769c02d059888ab2db12d92b457cb4a80096b/privacy_policy.txt"><span data-tr>Gizlilik Politikası</span><span data-en>Privacy Policy</span></a>
+      <a href="https://gist.githubusercontent.com/muratsezge-alt/88930038edd16ac57fd16eb6643126c4/raw/b0a9246acb3329d18c4afd1e136d82c016bf0df9/terms_of_service.txt"><span data-tr>Kullanım Koşulları</span><span data-en>Terms of Service</span></a>
+      <a href="mailto:solmaz.destek@gmail.com"><span data-tr>İletişim</span><span data-en>Contact</span></a>
     </div>
     <div class="copy">© 2026 Murat Solmaz</div>
   </div>
 </footer>
-
 <script>
+  function setLang(lang){
+    document.body.classList.toggle('en', lang==='en');
+    document.documentElement.lang = lang;
+    document.getElementById('btn-tr').classList.toggle('active', lang==='tr');
+    document.getElementById('btn-en').classList.toggle('active', lang==='en');
+  }
   const obs = new IntersectionObserver((entries)=>{
     entries.forEach((e,i)=>{ if(e.isIntersecting){ setTimeout(()=>e.target.classList.add('in'), i*60); obs.unobserve(e.target);} });
   },{threshold:.12});
