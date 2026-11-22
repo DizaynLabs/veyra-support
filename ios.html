@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veyra Media — iPhone &amp; iPad Destek</title>
+<meta name="description" content="Veyra Media iPhone ve iPad destek: playlist ekleme (Xtream Codes, M3U), oynatma sorunları, EPG, indirme, Premium, Reklamsız ve geri yükleme.">
+<meta name="theme-color" content="#060a14">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="site.js"></script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="index.html"><span class="logo"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>Veyra Media</a>
+    <div class="nav-r">
+      <nav class="nav-links">
+        <a href="ios.html" class="on">iPhone &amp; iPad</a>
+        <a href="tv.html">Apple TV</a>
+        <a href="#sorunlar"><span data-tr>Sorun giderme</span><span data-en>Troubleshooting</span></a>
+        <a href="#iletisim"><span data-tr>İletişim</span><span data-en>Contact</span></a>
+      </nav>
+      <div class="lang"><button data-l="tr" onclick="setLang('tr')">TR</button><button data-l="en" onclick="setLang('en')">EN</button></div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="pill"><i></i>iPhone &amp; iPad</div>
+    <h1 data-tr>Kendi listeniz, <span class="grad">cebinizde</span></h1>
+    <h1 data-en>Your own list, <span class="grad">in your pocket</span></h1>
+    <p class="lead" data-tr>Kurulum adımları, özellikler ve sık karşılaşılan sorunların çözümleri. Aradığınızı bulamazsanız sayfanın sonundan bize yazın.</p>
+    <p class="lead" data-en>Setup steps, features and fixes for common problems. Can't find what you need? Write to us at the bottom of the page.</p>
+    <div class="cta">
+      <a class="btn btn-p" href="https://apps.apple.com/app/id6762657480"><svg viewBox="0 0 24 24" fill="#1a1304"><path d="M17.05 12.04c-.03-2.6 2.12-3.85 2.22-3.91-1.21-1.77-3.09-2.01-3.76-2.04-1.6-.16-3.12.94-3.93.94-.81 0-2.06-.92-3.39-.89-1.74.03-3.35 1.01-4.25 2.57-1.81 3.14-.46 7.79 1.3 10.34.86 1.25 1.88 2.65 3.21 2.6 1.29-.05 1.78-.83 3.34-.83 1.55 0 2 .83 3.37.81 1.39-.03 2.27-1.27 3.12-2.53.98-1.45 1.39-2.85 1.41-2.92-.03-.01-2.71-1.04-2.74-4.13M14.54 4.6c.71-.86 1.19-2.06 1.06-3.25-1.02.04-2.26.68-2.99 1.54-.66.76-1.23 1.98-1.08 3.15 1.14.09 2.3-.58 3.01-1.44"/></svg><span data-tr>App Store</span><span data-en>App Store</span></a>
+      <a class="btn btn-g" href="#sorunlar"><span data-tr>Sorun giderme</span><span data-en>Troubleshooting</span></a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="big-notice reveal">
+      <div class="bi"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></div>
+      <div>
+        <h3 data-tr>Veyra Media playlist, kanal veya içerik sağlamaz</h3>
+        <h3 data-en>Veyra Media does not provide playlists, channels or content</h3>
+        <p data-tr>Uygulama boş gelir; yalnızca <strong>sizin eklediğiniz</strong> M3U bağlantısını veya Xtream Codes hesabını oynatır. Liste, kanal ya da "hesap" satmıyor, önermiyoruz. Satın alımlar <strong>abonelik değildir</strong>; tek seferliktir.</p>
+        <p data-en>The app comes empty; it only plays the M3U link or Xtream Codes account <strong>you add</strong>. We do not sell or recommend lists, channels or "accounts". Purchases are <strong>not subscriptions</strong>; they are one-time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="baslangic">
+  <div class="wrap">
+    <div class="sh reveal">
+      <span class="kick"><span data-tr>Başlangıç</span><span data-en>Getting started</span></span>
+      <h2 data-tr>3 adımda izlemeye başlayın</h2><h2 data-en>Start watching in 3 steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <h3 data-tr>Playlist ekleyin</h3><h3 data-en>Add a playlist</h3>
+        <p data-tr>İlk açılışta ya da <strong>Ayarlar → Playlist</strong>'ten dört yoldan birini seçin: <strong>Xtream Codes</strong> (sunucu, kullanıcı adı, şifre), <strong>M3U URL</strong>, <strong>M3U dosyası</strong> veya <strong>Yerel medya</strong> (cihazınızdaki videolar).</p>
+        <p data-en>On first launch or from <strong>Settings → Playlist</strong>, choose one of four ways: <strong>Xtream Codes</strong> (server, username, password), <strong>M3U URL</strong>, <strong>M3U file</strong> or <strong>Local media</strong> (videos on your device).</p>
+      </div>
+      <div class="step reveal">
+        <h3 data-tr>İçerik yüklensin</h3><h3 data-en>Let it load</h3>
+        <p data-tr>Canlı TV, Filmler ve Diziler kendi sekmelerine ayrılır. Büyük listelerde ilk yükleme birkaç dakika sürebilir; sonraki açılışlar önbellekten anında gelir.</p>
+        <p data-en>Live TV, Movies and Series are split into their own tabs. Large lists can take a few minutes the first time; later launches load instantly from cache.</p>
+      </div>
+      <div class="step reveal">
+        <h3 data-tr>Kişiselleştirin</h3><h3 data-en>Make it yours</h3>
+        <p data-tr>Favoriler, kaldığın yerden devam, tema, kanal görünümü ve <strong>İçeriği yönet</strong> ile kategorileri sıralama, gizleme ve yeniden adlandırma.</p>
+        <p data-en>Favorites, continue watching, themes, channel layout and <strong>Manage content</strong> to reorder, hide and rename categories.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ozellikler">
+  <div class="wrap">
+    <div class="sh reveal">
+      <span class="kick"><span data-tr>Özellikler</span><span data-en>Features</span></span>
+      <h2 data-tr>Neler yapabilirsiniz?</h2><h2 data-en>What you can do</h2>
+    </div>
+    <div class="grid">
+      <div class="card reveal"><span class="em">📺</span><h3><span data-tr>Canlı TV, Film, Dizi</span><span data-en>Live TV, Movies, Series</span></h3><p data-tr>Kategoriler, tüm listede arama, son izlenenler ve "Devam et".</p><p data-en>Categories, search across the whole list, recently watched and "Continue".</p></div>
+      <div class="card reveal"><span class="em">🗓️</span><h3><span data-tr>TV rehberi (EPG)</span><span data-en>TV guide (EPG)</span></h3><p data-tr>Şu an ve sıradaki program, ilerleme çubuğu, rehber görünümü.</p><p data-en>Now and next, progress bar and a guide view.</p></div>
+      <div class="card reveal"><span class="em">🎛️</span><h3><span data-tr>Güçlü oynatıcı</span><span data-en>Powerful player</span></h3><p data-tr>Apple oynatıcısı açamazsa VLC motoruna otomatik geçiş; ses dili, altyazı, görüntü modu, hız.</p><p data-en>Falls back to the VLC engine when Apple's player can't open a stream; audio language, subtitles, display mode, speed.</p></div>
+      <div class="card reveal"><span class="em">🖼️</span><h3><span data-tr>Resim içinde Resim</span><span data-en>Picture in Picture</span> <span class="tag">Premium</span></h3><p data-tr>Ana ekrana çıkınca video köşede oynamaya devam eder. Arka planda ses de Premium'dadır.</p><p data-en>Video keeps playing in a corner when you go home. Background audio is Premium too.</p></div>
+      <div class="card reveal"><span class="em">⬇️</span><h3><span data-tr>İndir</span><span data-en>Download</span> <span class="tag">Premium</span></h3><p data-tr>Film ve bölümleri indirip internetsiz izleyin. Dosyalar uygulamanın içinde kalır.</p><p data-en>Download movies and episodes to watch offline. Files stay inside the app.</p></div>
+      <div class="card reveal"><span class="em">🔲</span><h3><span data-tr>Çoklu ekran</span><span data-en>Multi-screen</span> <span class="tag">Premium</span></h3><p data-tr>4 kanala kadar aynı anda, farklı yerleşimlerle.</p><p data-en>Up to 4 channels at once, in several layouts.</p></div>
+      <div class="card reveal"><span class="em">📡</span><h3><span data-tr>AirPlay &amp; Chromecast</span><span data-en>AirPlay &amp; Chromecast</span> <span class="tag">Premium</span></h3><p data-tr>Görüntüyü televizyonunuza yansıtın.</p><p data-en>Send the picture to your TV.</p></div>
+      <div class="card reveal"><span class="em">🔐</span><h3><span data-tr>Kilit ve aile</span><span data-en>Locks &amp; family</span></h3><p data-tr>Ebeveyn kilidi, yetişkin içeriğini gizleme, Face ID / Touch ID ile uygulama kilidi.</p><p data-en>Parental lock, hide adult content, Face ID / Touch ID app lock.</p></div>
+      <div class="card reveal"><span class="em">☁️</span><h3><span data-tr>Apple TV ile eşitleme</span><span data-en>Sync with Apple TV</span> <span class="tag">Premium</span></h3><p data-tr>Playlist'ler, favoriler, kaldığın yer ve son izlenenler iCloud ile Apple TV'ye taşınır.</p><p data-en>Playlists, favorites, progress and recent channels move to Apple TV via iCloud.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="premium">
+  <div class="wrap">
+    <div class="sh reveal">
+      <span class="kick">Premium</span>
+      <h2 data-tr>Tek seferlik. Abonelik yok.</h2><h2 data-en>One-time. No subscription.</h2>
+      <p data-tr>Uygulamanın temel özellikleri satın alma gerektirmez (reklamlı). İsterseniz aşağıdakilerden birini bir kez alırsınız; otomatik yenileme olmaz.</p>
+      <p data-en>The core features need no purchase (with ads). If you like, buy one of these once; nothing renews automatically.</p>
+    </div>
+    <div class="plans">
+      <div class="plan reveal">
+        <h3 data-tr>Reklamsız</h3><h3 data-en>Ad-Free</h3>
+        <span class="once" data-tr>Tek seferlik</span><span class="once" data-en>One-time</span>
+        <ul>
+          <li data-tr>iPhone ve iPad'de reklamları kaldırır</li><li data-en>Removes ads on iPhone and iPad</li>
+          <li data-tr>Premium özellikleri içermez</li><li data-en>Does not include Premium features</li>
+          <li data-tr>Daha sonra Premium'a yükseltebilirsiniz</li><li data-en>You can upgrade to Premium later</li>
+        </ul>
+      </div>
+      <div class="plan feat reveal">
+        <h3 data-tr>Premium · Ömür boyu</h3><h3 data-en>Premium · Lifetime</h3>
+        <span class="once" data-tr>Tek seferlik</span><span class="once" data-en>One-time</span>
+        <ul>
+          <li data-tr>Tüm Premium özellikler</li><li data-en>All Premium features</li>
+          <li data-tr>Reklamlar da kalkar</li><li data-en>Ads removed too</li>
+          <li data-tr>iPhone, iPad ve Apple TV'de geçerli</li><li data-en>Valid on iPhone, iPad and Apple TV</li>
+          <li data-tr>Aynı Apple Kimliğiyle her cihazda geri yüklenir</li><li data-en>Restores on every device with the same Apple ID</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sorunlar">
+  <div class="wrap">
+    <div class="sh reveal">
+      <span class="kick"><span data-tr>Sorun giderme</span><span data-en>Troubleshooting</span></span>
+      <h2 data-tr>Sık karşılaşılan sorunlar</h2><h2 data-en>Common problems</h2>
+      <p data-tr>Oynatma sorunlarının çoğu playlist'in kaynağından (sağlayıcı sunucusu) ya da internet bağlantısından kaynaklanır. Aşağıdaki adımlar çoğu durumu çözer.</p>
+      <p data-en>Most playback problems come from the playlist's source (the provider's server) or the internet connection. The steps below fix most cases.</p>
+    </div>
+    <div class="faq-cats">
+      <a href="#g-giris"><span data-tr>Giriş &amp; liste</span><span data-en>Login &amp; list</span></a>
+      <a href="#g-oynatma"><span data-tr>Oynatma</span><span data-en>Playback</span></a>
+      <a href="#g-epg">EPG</a>
+      <a href="#g-satin"><span data-tr>Satın alma</span><span data-en>Purchases</span></a>
+      <a href="#g-diger"><span data-tr>Diğer</span><span data-en>Other</span></a>
+    </div>
+    <div class="faq">
+      <h3 class="grp" id="g-giris"><span data-tr>Giriş &amp; liste</span><span data-en>Login &amp; list</span></h3>
+      <details class="reveal" id="q-xtream"><summary><span data-tr>Xtream Codes ile giriş yapamıyorum</span><span data-en>I can't log in with Xtream Codes</span><span class="pl"></span></summary><div class="ans">
+        <ol data-tr><li>Sunucu adresini sağlayıcınızın verdiği gibi, <strong>http:// veya https:// ve port</strong> ile yazın (ör. <code>http://ornek.com:8080</code>).</li><li>Kullanıcı adı ve şifrenin başında/sonunda <strong>boşluk</strong> olmadığından emin olun; büyük/küçük harf önemlidir.</li><li>Hesabınızın <strong>aktif</strong> olduğunu ve süresinin dolmadığını sağlayıcınıza sorun.</li><li>Cihazın <strong>tarih ve saatinin</strong> otomatik olduğundan emin olun; yanlış saat giriş hatası verebilir.</li><li>Başka bir ağda (ör. mobil veri) deneyin; bazı internet sağlayıcıları sunucuları engelleyebilir.</li></ol>
+        <ol data-en><li>Enter the server exactly as your provider gave it, <strong>with http:// or https:// and the port</strong> (e.g. <code>http://example.com:8080</code>).</li><li>Make sure there are no <strong>spaces</strong> before/after the username and password; they are case-sensitive.</li><li>Ask your provider whether your account is <strong>active</strong> and not expired.</li><li>Make sure the device's <strong>date and time</strong> are set automatically; a wrong clock can cause login errors.</li><li>Try another network (e.g. mobile data); some ISPs block certain servers.</li></ol>
+      </div></details>
+      <details class="reveal"><summary><span data-tr>M3U listesi yüklenmiyor ya da boş geliyor</span><span data-en>My M3U list won't load or is empty</span><span class="pl"></span></summary><div class="ans">
+        <span data-tr>Bağlantıyı Safari'de açmayı deneyin: bir dosya inmiyorsa ya da hata veriyorsa bağlantı geçersizdir veya süresi dolmuştur. Çok büyük listeler ilk seferde birkaç dakika sürebilir; ekranı açık tutun. Sağlayıcınız Xtream Codes bilgisi veriyorsa M3U yerine <strong>Xtream Codes</strong> ile eklemek genellikle daha hızlı ve güvenilirdir (film/dizi bilgileri ve EPG otomatik gelir).</span>
+        <span data-en>Try opening the link in Safari: if no file downloads or you get an error, the link is invalid or expired. Very large lists may take a few minutes the first time; keep the screen on. If your provider gives Xtream Codes details, adding them via <strong>Xtream Codes</strong> instead of M3U is usually faster and more reliable (movie/series info and EPG come automatically).</span>
+      </div></details>
+      <details class="reveal"><summary><span data-tr>Yeni eklenen kanallar/filmler görünmüyor</span><span data-en>New channels/movies don't show up</span><span class="pl"></span></summary><div class="ans">
+        <span data-tr><strong>Ayarlar → Playlist → Şimdi yenile</strong>'ye dokunun. "Açılışta otomatik güncelle" ve "Yenileme sıklığı" ayarlarıyla listenin ne zaman yenileneceğini seçebilirsiniz. Gizlediğiniz kategoriler <strong>İçeriği yönet</strong>'ten geri açılabilir.</span>
+        <span data-en>Tap <strong>Settings → Playlist → Refresh now</strong>. Use "Auto-update on launch" and "Refresh frequency" to choose when the list refreshes. Categories you hid can be restored from <strong>Manage content</strong>.</span>
+      </div></details>
+      <details class="reveal"><summary><span data-tr>Hesabımın bitiş tarihini nereden görürüm?</span><span data-en>Where can I see my account's expiry date?</span><span class="pl"></span></summary><div class="ans">
+        <span data-tr>Xtream Codes listelerinde <strong>Ayarlar → İçeriği yönet → playlist bilgisi</strong>'nde durum, bağlantı sayısı ve bitiş tarihi görünür. Bu tarih sağlayıcınızla olan hesabınıza aittir; Veyra Media'nın bir aboneliği yoktur. Yenilemek için sağlayıcınıza başvurun.</span>
+        <span data-en>For Xtream Codes lists, status, connections and expiry appear in <strong>Settings → Manage content → playlist info</strong>. This date belongs to your account with your provider; Veyra Media has no subscription. Contact your provider to renew.</span>
+      </div></details>
+
+      <h3 class="grp" id="g-oynatma"><span data-tr>Oynatma</span><span data-en>Playback</span></h3>
+      <details class="reveal"><summary><span data-tr>Görüntü takılıyor / sürekli yükleniyor</span><span data-en>Video buffers / keeps loading</span><span class="pl"></span></summary><div class="ans">
+        <ol data-tr><li>İnternet hızınızı kontrol edin: HD için en az ~10 Mbps, 4K için ~25 Mbps önerilir.</li><li>Kanalın daha düşük kalitesini (SD/HD) deneyin ya da <strong>Ayarlar → Oynatıcı → Varsayılan kalite</strong>'yi düşürün.</li><li>Aynı hesabı başka cihazlarda izliyorsanız kapatın: çoğu hesap <strong>bağlantı sayısıyla</strong> sınırlıdır.</li><li>Sorun belirli saatlerde ya da tüm kanallarda oluyorsa genellikle sağlayıcı sunucusu yoğundur; sağlayıcınıza bildirin.</li><li>Modemi yeniden başlatmak ve Wi-Fi yerine mobil veriyle denemek sorunun ağda olup olmadığını gösterir.</li></ol>
+        <ol data-en><li>Check your internet speed: around 10 Mbps for HD and 25 Mbps for 4K is recommended.</li><li>Try a lower-quality version of the channel (SD/HD) or lower <strong>Settings → Player → Default quality</strong>.</li><li>Close the same account on other devices: most accounts are limited by <strong>number of connections</strong>.</li><li>If it happens at certain hours or on every channel, the provider's server is usually overloaded; tell your provider.</li><li>Restarting your router and trying mobile data instead of Wi-Fi shows whether the problem is your network.</li></ol>
+      </div></details>
+      <details class="reveal"><summary><span data-tr>Siyah ekran / ses var görüntü yok / "oynatılamadı"</span><span data-en>Black screen / audio but no video / "couldn't play"</span><span class="pl"></span></summary><div class="ans">
+        <span data-tr>Uygulama önce Apple'ın oynatıcısını dener, açamazsa VLC motoruna geçer. Hâlâ açılmıyorsa: başka bir kanalı deneyin (tek kanal ise yayın kaynakta kapalı olabilir), <strong>Ayarlar → Oynatıcı → Oynatıcı motoru</strong>'nu değiştirin (Premium) ve uygulamayı tamamen kapatıp açın. Bazı yayınlar yalnızca belirli ülkelerden ya da belirli cihaz türlerinden erişime açıktır; bunu yalnızca sağlayıcınız değiştirebilir.</span>
+        <span data-en>The app tries Apple's player first and switches to the VLC engine if needed. If it still won't open: try another channel (if only one fails, the stream may be down at the source), change <strong>Settings → Player → Player engine</strong> (Premium) and fully close and reopen the app. Some streams only work from certain countries or device types; only your provider can change that.</span>
+      </div></details>
+      <details class="reveal"><summary><span data-tr>Altyazı veya dublaj seçemiyorum</span><span data-en>I can't choose subtitles or audio language</span><span class="pl"></span></summary><div class="ans">
+        <span data-tr>Oynatıcının alt satırındaki <strong>Dublaj</strong> ve <strong>Altyazı</strong> düğmelerini kullanın. Seçenek görünmüyorsa yayında ek ses/altyazı izi yoktur. Altyazı boyutu ve gecikme ayarları ⚙ menüsündedir (Premium).</span>
+        <span data-en>Use the <strong>Audio</strong> and <strong>Subtitles</strong> buttons on the player's bottom row. If nothing appears, the stream has no extra tracks. Subtitle size and delay are in the ⚙ menu (Premium).</span>
+      </div></details>
+      <details class="reveal"><summary><span data-tr>Resim içinde Resim / arka planda ses çalışmıyor</span><span data-en>Picture in Picture / background audio doesn't work</span><span class="pl"></span></summary><div class="ans">
+        <span data-tr>İkisi de Premium özelliğidir. iPhone'da <strong>Ayarlar → Genel → Resim içinde Resim → Otomatik başlat</strong> açık olmalıdır. VLC motoruyla açılan bazı yayınlarda PiP iOS tarafından desteklenmeyebilir.</span>
+        <span data-en>Both are Premium features. On iPhone, <strong>Settings → General → Picture in Picture → Start PiP Automatically</strong> must be on. Some streams opened with the VLC engine may not support PiP on iOS.</span>
+      </div></details>
+      <details class="reveal"><summary><span data-tr>İndirme başlamıyor ya da yarıda kalıyor</span><span data-en>Downloads won't start or stop halfway</span><span class="pl"></span></summary><div class="ans">
+        <span data-tr>İndirme Premium'dur ve yalnızca film/bölüm içindir (canlı yayın indirilemez). Cihazda yeterli boş alan olduğundan emin olun. Bazı sağlayıcılar indirmeyi ya da aynı anda iki bağlantıyı engeller; izlerken indirme yapmamayı deneyin. İndirilenler yalnızca uygulama içinde oynatılır.</span>
+        <span data-en>Downloading is Premium and only for movies/episodes (live TV can't be downloaded). Make sure the device has enough free space. Some providers block downloads or two connections at once; try not to watch while downloading. Downloads play only inside the app.</span>
+      </div></details>
+
+      <h3 class="grp" id="g-epg">EPG</h3>
+      <details class="reveal"><summary><span data-tr>TV rehberi (EPG) boş görünüyor</span><span data-en>The TV guide (EPG) is empty</span><span class="pl"></span></summary><div class="ans">
+        <span data-tr>Xtream Codes listelerinde EPG otomatik gelir. M3U listelerinde listenin içinde rehber adresi yoksa <strong>Ayarlar → EPG Yönetimi</strong>'nden sağlayıcınızın verdiği XMLTV adresini ekleyin. Kanal eşleşmesi kanal kimliğine (tvg-id) göre yapılır; bazı kanallarda sağlayıcı rehber vermiyorsa boş kalır. Cihaz saat diliminin doğru olduğundan emin olun.</span>
+        <span data-en>With Xtream Codes, EPG loads automatically. For M3U, if the list has no guide address, add the XMLTV URL from your provider in <strong>Settings → EPG Management</strong>. Channels are matched by channel ID (tvg-id); if the provider has no guide for a channel it stays empty. Make sure the device time zone is correct.</span>
+      </div></details>
+
+      <h3 class="grp" id="g-satin"><span data-tr>Satın alma</span><span data-en>Purchases</span></h3>
+      <details class="reveal" id="q-restore"><summary><span data-tr>Satın alımımı geri yükleme / yeni telefona taşıma</span><span data-en>Restoring my purchase / moving to a new phone</span><span class="pl"></span></summary><div class="ans">
+        <span data-tr>Premium ekranında <strong>Geri Yükle</strong>'ye dokunun. Aynı Apple Kimliğiyle alınan Premium ve Reklamsız geri gelir. Görünmüyorsa App Store'da doğru Apple Kimliğiyle oturum açtığınızı kontrol edin.</span>
+        <span data-en>Tap <strong>Restore</strong> on the Premium screen. Premium and Ad-Free bought with the same Apple ID come back. If not, check that you're signed in to the App Store with the right Apple ID.</span>
+      </div></details>
+      <details class="reveal"><summary><span data-tr>Aylık ücret alınacak mı?</span><span data-en>Will I be charged monthly?</span><span class="pl"></span></summary><div class="ans">
+        <span data-tr>Hayır. Reklamsız ve Premium <strong>tek seferlik</strong> satın alımlardır; aboneliğimiz yoktur ve hiçbir şey otomatik yenilenmez. Banka ekstrenizde tekrar eden bir ücret görüyorsanız bu Veyra Media'ya değil, başka bir hizmete (ör. IPTV sağlayıcınıza) aittir.</span>
+        <span data-en>No. Ad-Free and Premium are <strong>one-time</strong> purchases; we have no subscriptions and nothing renews. A recurring charge on your statement belongs to another service (e.g. your IPTV provider), not Veyra Media.</span>
+      </div></details>
+      <details class="reveal"><summary><span data-tr>Neden reklam görüyorum?</span><span data-en>Why do I see ads?</span><span class="pl"></span></summary><div class="ans">
+        <span data-tr>Satın alma yapmamış kullanıcılar reklam görür. Reklamsız ya da Premium alınca reklamlar tamamen kalkar. Kişiselleştirilmiş reklam iznini iPhone <strong>Ayarlar → Gizlilik → İzleme</strong>'den değiştirebilirsiniz.</span>
+        <span data-en>Users without a purchase see ads. Ad-Free or Premium removes them completely. You can change personalized-ad permission in iPhone <strong>Settings → Privacy → Tracking</strong>.</span>
+      </div></details>
+
+      <h3 class="grp" id="g-diger"><span data-tr>Diğer</span><span data-en>Other</span></h3>
+      <details class="reveal"><summary><span data-tr>Playlist'lerim Apple TV'ye nasıl geçer?</span><span data-en>How do my playlists get to Apple TV?</span><span class="pl"></span></summary><div class="ans">
+        <span data-tr>Premium ile <strong>Ayarlar → iCloud → Apple TV ile senkron</strong>'u açın; Apple TV'de de aynı Apple Kimliği ve eşitleme açık olmalıdır. Şifreler iCloud Anahtar Zinciri ile güvenle taşınır.</span>
+        <span data-en>With Premium, turn on <strong>Settings → iCloud → Sync with Apple TV</strong>; the Apple TV must use the same Apple ID with sync on. Passwords move securely via iCloud Keychain.</span>
+      </div></details>
+      <details class="reveal"><summary><span data-tr>Uygulama kapanıyor ya da çok yavaş</span><span data-en>The app crashes or is very slow</span><span class="pl"></span></summary><div class="ans">
+        <span data-tr>App Store'dan güncel sürümü yükleyin. Sorun sürerse <strong>Ayarlar → Önbellek → Kanal önbelleğini temizle</strong>'yi deneyin (playlist'leriniz silinmez). Çok büyük listelerde gereksiz kategorileri <strong>İçeriği yönet</strong>'ten gizlemek hızı artırır.</span>
+        <span data-en>Install the latest version from the App Store. If it continues, try <strong>Settings → Cache → Clear channel cache</strong> (your playlists are kept). With very large lists, hiding unneeded categories in <strong>Manage content</strong> speeds things up.</span>
+      </div></details>
+      <details class="reveal"><summary><span data-tr>Ebeveyn kilidi PIN'imi unuttum</span><span data-en>I forgot my parental lock PIN</span><span class="pl"></span></summary><div class="ans">
+        <span data-tr>Güvenlik nedeniyle PIN'i biz göremeyiz ya da sıfırlayamayız. Bize uygulama sürümünüzle birlikte yazın, size yol gösterelim.</span>
+        <span data-en>For security we can't see or reset your PIN. Write to us with your app version and we'll guide you.</span>
+      </div></details>
+    </div>
+  </div>
+</section>
+
+<section id="iletisim">
+  <div class="wrap">
+    <div class="contact reveal">
+      <h2 data-tr>Çözüm bulamadınız mı?</h2><h2 data-en>Didn't find a fix?</h2>
+      <p data-tr>Uygulamada <strong>Ayarlar → Hakkında → Bize ulaşın</strong>'dan ya da doğrudan e-postayla yazın.</p>
+      <p data-en>Write from <strong>Settings → About → Contact us</strong> in the app, or email us directly.</p>
+      <a class="mail" href="mailto:solmaz.destek@gmail.com?subject=Veyra%20Media%20iOS"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>solmaz.destek@gmail.com</a>
+      <p class="tip" data-tr>Cihaz modeli, iOS sürümü, uygulama sürümü ve sorunu kısaca yazın. Ekran görüntüsü çok yardımcı olur. Playlist şifrenizi göndermeyin.</p>
+      <p class="tip" data-en>Include device model, iOS version, app version and a short description. A screenshot helps a lot. Don't send your playlist password.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a class="brand" href="index.html"><span class="logo"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>Veyra Media</a>
+      <nav>
+        <a href="index.html"><span data-tr>Destek ana sayfa</span><span data-en>Help home</span></a><a href="tv.html">Apple TV</a>
+        <a href="privacy.html"><span data-tr>Gizlilik Politikası</span><span data-en>Privacy Policy</span></a>
+        <a href="terms.html"><span data-tr>Kullanım Koşulları</span><span data-en>Terms of Use</span></a>
+      </nav>
+      <div class="copy">© 2026 Murat Solmaz</div>
+    </div>
+    <p class="disc" data-tr>Veyra Media bir medya oynatıcısıdır; içerik, kanal listesi veya yayın sağlamaz ve hiçbir içerik sağlayıcısıyla bağlantılı değildir. Apple, iPhone, iPad, AirPlay ve iCloud, Apple Inc.'in ticari markalarıdır.</p>
+    <p class="disc" data-en>Veyra Media is a media player; it provides no content, channel lists or streams and is not affiliated with any content provider. Apple, iPhone, iPad, AirPlay and iCloud are trademarks of Apple Inc.</p>
+  </div>
+</footer>
+</body>
+</html>
